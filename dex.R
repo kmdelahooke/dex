@@ -6,6 +6,7 @@
 #returns a dataframe with the following columns: specimen id, surface, taxon, x, y, rx, ry, StemL, StemW, StemA, FrondL, FrondW, FrondA, description
 #warning messages for: (1) specimen has no disc (hence no coordinates)  (2) length of a path (steml, stemw, frondl, frondw) is zero 
 #(3) retrotransformation rx/ry regression is non significant
+#based on haskell code of egmitchell/dex
 
 #PACKAGES
 if (!require(XML)) install.packages("XML")
