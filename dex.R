@@ -19,7 +19,7 @@ dex <- function(filepath, retrodeform = FALSE) {
   #read in SVG
   p <- xmlParse(filepath)
   d <- xmlRoot(p)
-  g <- d[[4]]
+  g <- d[[4]] #change to 3 depending on inkscape version
   h <- as.numeric(gsub("mm", "", xmlGetAttr(d, "height")))
 
   #filter out non-specimens
